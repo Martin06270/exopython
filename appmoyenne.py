@@ -18,4 +18,4 @@ if len(moyenne):
     except ValueError:
         print("Veuillez entrer un nombre valide.")
 else:
-    print("Veuillez entrer une valeur.") 
+    print("Veuillez entrer un nombre .") 
