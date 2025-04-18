@@ -12,4 +12,7 @@ try:
         resultat = lancer_de(nombre_faces)
         print(f"Vous avez lancé un dé à {nombre_faces} faces et obtenu : {resultat}")
 except ValueError:
-    print("Veuillez entrer un nombre entier valide.")
+    print("Veuillez entrer un nombre entier valide.") 
+
+
+    
