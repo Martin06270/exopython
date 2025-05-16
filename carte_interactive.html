@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f0f8627e016a2cf6c2e99f0c57d6174c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f0f8627e016a2cf6c2e99f0c57d6174c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f0f8627e016a2cf6c2e99f0c57d6174c = L.map(
+                "map_f0f8627e016a2cf6c2e99f0c57d6174c",
+                {
+                    center: [48.8566, 2.3522],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a7313fa084bfa0ba3c33f375b5ee9145 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_a7313fa084bfa0ba3c33f375b5ee9145.addTo(map_f0f8627e016a2cf6c2e99f0c57d6174c);
+        
+    
+            var marker_37038c237955dd33be581b09c52320c7 = L.marker(
+                [48.8588443, 2.2943506],
+                {
+  "popun": "Tour Eiffel\u003c/b\u003e\u003cbr\u003eSymbole de Paris\u003c/b\u003e\u003cbr\u003eMonument",
+}
+            ).addTo(map_f0f8627e016a2cf6c2e99f0c57d6174c);
+        
+    
+            var icon_1e7bdd77666339affb348535de14ba7b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_37038c237955dd33be581b09c52320c7.bindTooltip(
+                `<div>
+                     Tour Eiffel
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_37038c237955dd33be581b09c52320c7.setIcon(icon_1e7bdd77666339affb348535de14ba7b);
+            
+    
+            var marker_3e14bf99454abd9defaae819db30e808 = L.marker(
+                [48.8606111, 2.337677],
+                {
+  "popun": "Louvre\u003c/b\u003e\u003cbr\u003eLe plus grand mus\u00e9e du monde \u003c/b\u003e\u003cbr\u003eMus\u00e9e",
+}
+            ).addTo(map_f0f8627e016a2cf6c2e99f0c57d6174c);
+        
+    
+            var icon_f885eb328423df0f64c5c8dc1e0f9f4e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "book",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_3e14bf99454abd9defaae819db30e808.bindTooltip(
+                `<div>
+                     Louvre
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3e14bf99454abd9defaae819db30e808.setIcon(icon_f885eb328423df0f64c5c8dc1e0f9f4e);
+            
+    
+            var marker_9d2a37d04d77b5d9c89e44b6f5b9ba4d = L.marker(
+                [48.85296819999999, 2.3499021],
+                {
+  "popun": "Notre-Dame\u003c/b\u003e\u003cbr\u003eCath\u00e9drale embl\u00e9matique de Paris\u003c/b\u003e\u003cbr\u003eMonument",
+}
+            ).addTo(map_f0f8627e016a2cf6c2e99f0c57d6174c);
+        
+    
+            var icon_27c04913e9811a52e13edcdcde2bd32d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_9d2a37d04d77b5d9c89e44b6f5b9ba4d.bindTooltip(
+                `<div>
+                     Notre-Dame
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9d2a37d04d77b5d9c89e44b6f5b9ba4d.setIcon(icon_27c04913e9811a52e13edcdcde2bd32d);
+            
+    
+            var marker_078e422690da59656a5530d3903070fb = L.marker(
+                [48.8867, 2.3431],
+                {
+  "popun": "Montmartre\u003c/b\u003e\u003cbr\u003eQuartier artistique de Paris\u003c/b\u003e\u003cbr\u003eQuartier",
+}
+            ).addTo(map_f0f8627e016a2cf6c2e99f0c57d6174c);
+        
+    
+            var icon_ae1b81f2e32e07c23807a6e8cb38488c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "tree-deciduous",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_078e422690da59656a5530d3903070fb.bindTooltip(
+                `<div>
+                     Montmartre
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_078e422690da59656a5530d3903070fb.setIcon(icon_ae1b81f2e32e07c23807a6e8cb38488c);
+            
+</script>
+</html>
