@@ -28,6 +28,9 @@ styles = {
     "Monument":{"color":"red", "icon":"home"},
     "Musée":{"color":"blue", "icon":"book"},
     "Quartier":{"color":"green", "icon":"tree-deciduous"},
+    "Parc":{"color":"orange", "icon":"tree"},
+    "Église":{"color":"purple", "icon":"cross"},
+    "Palais":{"color":"pink", "icon":"crown"},
 }
 
 
